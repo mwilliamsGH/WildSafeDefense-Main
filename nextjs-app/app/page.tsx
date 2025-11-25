@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import WhyActiveDefense from "@/components/WhyActiveDefense";
+import ProductShowcase from "@/components/ProductShowcase";
 import FeatureGrid from "@/components/FeatureGrid";
 import FAQSnapshot from "@/components/FAQSnapshot";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -55,7 +56,7 @@ export default function Home() {
       <Navigation />
 
       <HeroSection
-        backgroundImage="/images/California_hillside_home_golden_hour_d389558d.png"
+        backgroundImage="/images/new-images/doors-closed-house.png"
         headline="Wildfire Defense For California Homes"
         subheadline="When fire threatens your home, you need water you control and power that doesn't fail. The WildSafe Tank delivers 3,000 gallons of diesel-powered protection—operational in 8-14 weeks with no permits required."
         primaryCTA="Schedule Site Assessment"
@@ -65,13 +66,20 @@ export default function Home() {
       />
 
       <WhyActiveDefense
-        backgroundImage="/images/Installed_water_tank_on_property_ab96e557.png"
+        backgroundImage="/images/new-images/tank-beside-house.png"
         headline="Why Active Defense?"
-        bodyText="Fire crews can't be everywhere. Municipal water systems fail under pressure. Power goes out when you need it most. You need active defense—water you control, power that doesn't fail, protection that doesn't depend on anyone else.
+        bodyText="Fire crews can't be everywhere. Municipal water systems fail under pressure. Power goes out when you need it most.
 
-Most California properties complete fire-resistant materials and defensible space clearing, then stop. But those are passive measures—they reduce risk but can't actively fight flames. When embers land on your roof or fire reaches your perimeter, you need the third layer: active water defense you control."
+Most properties complete fire-resistant materials and defensible space, then stop. When embers land on your roof or fire reaches your perimeter, you need the third layer: active water defense you control."
         ctaText="Learn About Your Wildfire Risk"
         ctaLink="/product"
+      />
+
+      <ProductShowcase
+        sectionTitle="See The System In Action"
+        subtitle="Our concealed enclosure protects your equipment from the elements while keeping it accessible when you need it most."
+        closedImage="/images/new-images/doors-closed-house.png"
+        openImage="/images/new-images/doors-open-house.png"
       />
 
       <FeatureGrid
@@ -83,7 +91,7 @@ Most California properties complete fire-resistant materials and defensible spac
             stat: "8-14 Weeks",
             description:
               "No permits. No foundation. No utility connections. Delivered, installed, operational in 8-14 weeks while traditional systems take 6+ months.",
-            backgroundImage: "/images/Installed_water_tank_on_property_ab96e557.png",
+            backgroundImage: "/images/new-images/full-system-roof.png",
             overlayColor: "dark",
           },
           {
@@ -91,7 +99,7 @@ Most California properties complete fire-resistant materials and defensible spac
             stat: "Independence",
             description:
               "Off-grid operation. Zero dependence on electrical grid or municipal water. Works when infrastructure fails.",
-            backgroundImage: "/images/High_pressure_water_stream_closeup_fc5b905f.png",
+            backgroundImage: "/images/new-images/tank-front.jpeg",
             overlayColor: "black",
           },
           {
@@ -99,7 +107,7 @@ Most California properties complete fire-resistant materials and defensible spac
             stat: "Performance",
             description:
               "3,000 gallons. High-pressure pump. Three-story reach. Sustained water delivery when every minute counts.",
-            backgroundImage: "/images/High_pressure_water_stream_closeup_fc5b905f.png",
+            backgroundImage: "/images/new-images/doors-open-landscape.png",
             overlayColor: "dark",
           },
           {
@@ -107,7 +115,7 @@ Most California properties complete fire-resistant materials and defensible spac
             stat: "Design",
             description:
               "Concealed fiberglass design integrates into your landscape. Professional installation optimizes placement for protection and aesthetics.",
-            backgroundImage: "/images/Installed_water_tank_on_property_ab96e557.png",
+            backgroundImage: "/images/new-images/doors-closed-house.png",
             overlayColor: "dark",
           },
         ]}
@@ -118,7 +126,7 @@ Most California properties complete fire-resistant materials and defensible spac
         faqs={faqs}
         ctaText="See All Questions"
         ctaLink="/faq"
-        backgroundImage="/images/Installed_water_tank_on_property_ab96e557.png"
+        backgroundImage="/images/new-images/tank-beside-house.png"
       />
 
       <ComparisonTable />

@@ -32,7 +32,7 @@ export default function ProductHero({ headline, tagline }: ProductHeroProps) {
 
       <div className="bg-muted flex items-center justify-center p-8 sm:p-12 lg:p-16 min-h-[300px] lg:min-h-[50vh]">
         <Image
-          src="/wildsafe-tank-logo.png"
+          src="/WildSafeTank-logo.png"
           alt="WildSafe Tank Logo"
           width={400}
           height={400}

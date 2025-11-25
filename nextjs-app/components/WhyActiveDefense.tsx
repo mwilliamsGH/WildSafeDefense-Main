@@ -52,16 +52,16 @@ export default function WhyActiveDefense({
             {headline}
           </h2>
 
-          <p className="text-base sm:text-lg lg:text-xl text-white/90 leading-relaxed max-w-3xl mx-auto px-4">
+          <p className="text-sm sm:text-base lg:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto px-4">
             {bodyText}
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-8 sm:mb-12 max-w-6xl mx-auto">
           {layers.map((layer, index) => (
             <Card
               key={index}
-              className="p-4 sm:p-6 border-2 bg-white/10 backdrop-blur border-white/30"
+              className="p-6 sm:p-8 lg:p-10 border-2 bg-white/10 backdrop-blur border-white/30"
               style={
                 !layer.complete
                   ? {
@@ -71,9 +71,9 @@ export default function WhyActiveDefense({
                   : undefined
               }
             >
-              <div className="flex items-start gap-4 mb-4">
+              <div className="flex items-start gap-4 mb-6">
                 <div
-                  className={`w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0 ${
+                  className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center flex-shrink-0 ${
                     layer.complete ? "bg-white/20" : "bg-primary"
                   }`}
                 >
@@ -87,24 +87,24 @@ export default function WhyActiveDefense({
                 </div>
 
                 <div
-                  className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1 ${
+                  className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 mt-1 ${
                     layer.complete ? "bg-green-500/20" : "bg-red-500/20"
                   }`}
                 >
                   {layer.complete ? (
-                    <Check className="w-5 h-5 text-green-400" />
+                    <Check className="w-6 h-6 text-green-400" />
                   ) : (
-                    <X className="w-5 h-5 text-red-400" />
+                    <X className="w-6 h-6 text-red-400" />
                   )}
                 </div>
               </div>
 
-              <h3 className="text-base sm:text-lg font-bold text-white mb-2">
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2">
                 {layer.title}
               </h3>
 
               <p
-                className={`text-xs sm:text-sm ${
+                className={`text-sm sm:text-base ${
                   layer.complete
                     ? "text-white/70"
                     : "text-primary-foreground font-semibold"

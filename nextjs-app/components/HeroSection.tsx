@@ -22,7 +22,7 @@ export default function HeroSection({
   secondaryCTALink,
 }: HeroSectionProps) {
   return (
-    <div className="grid lg:grid-cols-2 min-h-[calc(100vh-5rem)]">
+    <div className="grid lg:grid-cols-2 min-h-[70vh]">
       <div className="bg-background flex flex-col justify-center items-center px-6 sm:px-8 lg:px-16 py-16 sm:py-20 lg:py-32">
         <div className="max-w-xl w-full text-left space-y-5">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight">
@@ -58,11 +58,11 @@ export default function HeroSection({
       </div>
 
       <div
-        className="relative bg-cover bg-center min-h-[350px] sm:min-h-[400px] lg:min-h-[calc(100vh-5rem)] order-first lg:order-last"
+        className="relative bg-cover bg-center min-h-[350px] sm:min-h-[400px] lg:min-h-[70vh] order-first lg:order-last"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className="absolute inset-0 bg-primary/95"></div>
-        <div className="relative z-10 h-full flex items-end justify-end p-6 sm:p-8 lg:p-16">
+        <div className="relative z-10 h-full flex items-center justify-center p-6 sm:p-8 lg:p-16">
           <Image
             src="/wildsafe-logo-white.svg"
             alt="WildSafe Defense"

@@ -37,7 +37,7 @@ export default function FeatureGrid({ sectionTitle, subtitle, features }: Featur
         <div className="text-center mb-12 sm:mb-16">
           <div className="flex justify-center mb-6 sm:mb-8">
             <Image
-              src="/wildsafe-tank-logo.png"
+              src="/WildSafeTank-logo.png"
               alt="WildSafe Tank Logo"
               width={240}
               height={240}
@@ -52,17 +52,17 @@ export default function FeatureGrid({ sectionTitle, subtitle, features }: Featur
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 sm:gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="relative min-h-[350px] sm:min-h-[400px] lg:min-h-[500px] overflow-hidden rounded-md bg-cover bg-center"
+              className="relative min-h-[400px] sm:min-h-[450px] lg:min-h-[550px] overflow-hidden rounded-md bg-cover bg-center"
               style={{ backgroundImage: `url(${feature.backgroundImage})` }}
             >
               <div className={`absolute inset-0 ${overlayColors[feature.overlayColor]}`}></div>
 
-              <div className={`relative h-full flex flex-col justify-end p-6 sm:p-8 lg:p-12 ${textColors[feature.overlayColor]}`}>
-                <div className="text-5xl sm:text-6xl lg:text-8xl font-bold mb-3 sm:mb-4 opacity-90">
+              <div className={`relative h-full flex flex-col justify-end p-8 sm:p-10 lg:p-12 ${textColors[feature.overlayColor]}`}>
+                <div className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-3 sm:mb-4 opacity-90">
                   {feature.stat}
                 </div>
 
@@ -70,7 +70,7 @@ export default function FeatureGrid({ sectionTitle, subtitle, features }: Featur
                   {feature.title}
                 </h3>
 
-                <p className="text-sm sm:text-base lg:text-lg leading-relaxed opacity-90">
+                <p className="text-sm sm:text-base lg:text-lg leading-relaxed opacity-90 max-w-md">
                   {feature.description}
                 </p>
               </div>

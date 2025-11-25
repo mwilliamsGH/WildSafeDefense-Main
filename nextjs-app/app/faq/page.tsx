@@ -74,7 +74,7 @@ export default function FAQ() {
 
         <div
           className="bg-cover bg-center relative min-h-[300px] lg:min-h-[50vh]"
-          style={{ backgroundImage: `url(/images/Installed_water_tank_on_property_ab96e557.png)` }}
+          style={{ backgroundImage: `url(/images/new-images/full-system-roof.png)` }}
         >
           <div className="absolute inset-0 bg-black/20"></div>
         </div>

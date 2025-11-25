@@ -34,7 +34,7 @@ export default function HalfPageSplit({
       style={{ backgroundImage: `url(${rightImage})` }}
     ></div>
   ) : (
-    <div className={`${rightBg} px-6 sm:px-8 lg:px-16 py-16 sm:py-20 lg:py-32 flex items-center justify-center`}>
+    <div className={`${rightBg} px-6 sm:px-8 lg:px-12 py-12 sm:py-16 lg:py-20 flex items-center justify-center`}>
       {rightContent}
     </div>
   );

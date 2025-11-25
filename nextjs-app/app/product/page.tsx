@@ -5,7 +5,7 @@ import SpecsGrid from "@/components/SpecsGrid";
 import ProductFeatures from "@/components/ProductFeatures";
 import HorizontalTimeline from "@/components/HorizontalTimeline";
 import PricingCards from "@/components/PricingCards";
-import WarrantySection from "@/components/WarrantySection";
+import InstallationWarranty from "@/components/InstallationWarranty";
 import FAQAccordion from "@/components/FAQAccordion";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -67,23 +67,14 @@ export default function Product() {
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4 sm:mb-6">
               How It Works
             </h2>
-            <p className="text-base sm:text-lg text-foreground/80 leading-relaxed mb-4 sm:mb-6 italic">
-              Picture this: It's 2 AM. Winds shift. Fire jumps the ridge. Power's out across the valley. Water pressure drops to nothing. But your diesel pump kicks on, drawing from 3,000 gallons that are always there, always ready.
-            </p>
-            <p className="text-base sm:text-lg text-foreground/80 leading-relaxed mb-6 sm:mb-8 italic">
-              For 30 minutes, you have high-pressure water reaching every vulnerable point—your roof, your perimeter, the tall trees near your home. That's the difference between watching your house burn and having the tools to defend it.
-            </p>
-            <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">
-              Technical Overview
-            </h3>
-            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4">
-              The WildSafe Tank is a self-contained water storage and high-pressure pumping system for perimeter defense during wildfire events.
+            <p className="text-sm sm:text-base text-foreground/80 leading-relaxed mb-4 italic">
+              2 AM. Fire jumps the ridge. Power fails. Water pressure drops. Your diesel pump kicks on—3,000 gallons ready.
             </p>
             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4">
-              The diesel-powered pump draws from a 3,000-gallon fiberglass tank, delivering 30 minutes of continuous high-pressure water through commercial-grade hoses. The system operates independently of electrical grids and municipal water—the two systems most likely to fail during emergencies.
+              Self-contained diesel pump draws from a 3,000-gallon tank, delivering 30 minutes of high-pressure water. Independent of electrical grids and municipal water—the systems that fail during emergencies.
             </p>
-            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-6 sm:mb-8">
-              Three-story reach protects rooftops, tall trees, and multi-level structures. When infrastructure fails, your defense continues.
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-6">
+              Three-story reach protects roofs, perimeter, and structures when infrastructure fails.
             </p>
             <Link href="/get-protected">
               <Button size="lg" className="w-full sm:w-auto min-h-12 px-8">
@@ -92,7 +83,7 @@ export default function Product() {
             </Link>
           </div>
         }
-        rightImage="/images/High_pressure_water_stream_closeup_fc5b905f.png"
+        rightImage="/images/new-images/Tank-side.jpeg"
         leftBg="bg-muted"
       />
 
@@ -143,91 +134,56 @@ export default function Product() {
             icon: <Rocket className="w-8 h-8" />,
             label: "FAST",
             headline: "No Permits. Installed in 8-14 Weeks.",
-            description: "Qualifies for California's accessory structure exemption. No building permits. No planning approvals. No foundation requirements. Traditional systems take 6-12 months and require extensive permitting and utility connections. We deliver, install, test, and train—while others are still in the approval process."
+            description: "Qualifies for California's accessory structure exemption—no permits, approvals, or foundation required. Delivered, installed, and operational while traditional systems wait 6-12 months for permitting."
           },
           {
             icon: <Battery className="w-8 h-8" />,
             label: "OFF-GRID",
             headline: "Works When Infrastructure Fails",
-            description: "Diesel-powered system delivers 30 minutes of sustained high-pressure water independent of the grid and municipal supply. During wildfire events, power fails and water pressure drops. Your defense continues operating when everything else stops. No grid connection means no vulnerability."
+            description: "Diesel-powered system operates independently—30 minutes of high-pressure water when power and municipal supply fail. No grid connection means no vulnerability."
           },
           {
             icon: <Sparkles className="w-8 h-8" />,
             label: "INTEGRATED",
             headline: "Designed to Blend",
-            description: "Low-profile fiberglass construction with concealed placement optimized during your site assessment. We maximize protection while minimizing visual impact. Professional installation ensures the system integrates naturally into your property's landscape."
+            description: "Low-profile fiberglass with concealed placement optimized during site assessment. Professional installation integrates naturally into your property."
           }
         ]}
       />
 
-      <section className="py-20 lg:py-32 px-6 lg:px-8 bg-background">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center text-foreground mb-4">
-            Installation Process*
-          </h2>
+      <InstallationWarranty />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                1
-              </div>
-              <h3 className="font-bold text-foreground mb-2">Weeks 1-2</h3>
-              <p className="text-sm text-muted-foreground">Order & Fabrication</p>
-              <p className="text-xs text-muted-foreground mt-2">Tank fabrication begins immediately upon order confirmation. Your $100 deposit secures your installation window.</p>
+      <section className="py-12 lg:py-16 px-6 lg:px-8 bg-gradient-to-b from-muted to-background">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-8">
+            <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full mb-3">
+              TRANSPARENT PRICING
             </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                2
-              </div>
-              <h3 className="font-bold text-foreground mb-2">Weeks 3-10</h3>
-              <p className="text-sm text-muted-foreground">International Shipping</p>
-              <p className="text-xs text-muted-foreground mt-2">Tank ships internationally (currently 8-12 weeks). We coordinate customs, freight, and delivery logistics while keeping you updated.</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                3
-              </div>
-              <h3 className="font-bold text-foreground mb-2">Weeks 11-12</h3>
-              <p className="text-sm text-muted-foreground">Pre-Delivery Coordination</p>
-              <p className="text-xs text-muted-foreground mt-2">Site preparation, access verification, and delivery scheduling. We confirm optimal placement based on your site assessment.</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                4
-              </div>
-              <h3 className="font-bold text-foreground mb-2">Weeks 13-14</h3>
-              <p className="text-sm text-muted-foreground">Installation & Testing</p>
-              <p className="text-xs text-muted-foreground mt-2">Delivery, positioning, pump installation, system testing, and operator training. Complete handoff with documentation.</p>
-            </div>
-          </div>
-
-          <div className="mt-12 p-6 bg-muted rounded-lg border-l-4 border-primary">
-            <h3 className="font-bold text-foreground mb-2">Shipping & Installation Timeline Disclaimer</h3>
-            <p className="text-sm text-muted-foreground">
-              *Installation timelines are estimates based on current shipping conditions. International tank shipment currently requires 8-12 weeks. Total project timeline typically ranges from 8-14 weeks but may vary based on shipping logistics and site-specific factors. Detailed schedule provided after site assessment and order confirmation.
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">
+              Protection That Fits Your Budget
+            </h2>
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto">
+              Professional-grade wildfire defense at a fraction of traditional system costs
             </p>
           </div>
-        </div>
-      </section>
 
-      <section className="py-20 lg:py-32 px-6 lg:px-8 bg-muted">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center text-foreground mb-4">
-            Protection That Fits Your Budget
-          </h2>
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+            {/* WildSafe Tank - Featured */}
+            <div className="relative bg-gradient-to-br from-primary to-primary/90 rounded-xl p-6 lg:p-8 shadow-2xl transform transition-transform hover:scale-105">
+              <div className="absolute -top-3 -right-3 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                MOST POPULAR
+              </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mt-12">
-            {/* WildSafe Tank */}
-            <div className="bg-background rounded-lg p-8 shadow-lg border-2 border-primary">
-              <h3 className="text-2xl font-bold text-foreground mb-2">WildSafe Tank</h3>
-              <div className="text-4xl font-bold text-primary mb-2">$21,500</div>
-              <p className="text-muted-foreground mb-6">Complete wildfire defense system</p>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-4">
+                <h3 className="text-2xl font-bold text-white mb-2">WildSafe Tank</h3>
+                <div className="flex items-baseline gap-2 mb-1">
+                  <span className="text-5xl font-bold text-white">$21,500</span>
+                </div>
+                <p className="text-white/90">Complete wildfire defense system</p>
+              </div>
 
-              <h4 className="font-bold text-foreground mb-3">What's Included:</h4>
-              <ul className="space-y-2 mb-6">
+              <h4 className="font-bold text-white mb-2 text-sm">What's Included:</h4>
+              <ul className="space-y-1.5 mb-4">
                 {[
                   "3,000-gallon fiberglass tank",
                   "Diesel high-pressure pump system",
@@ -238,72 +194,98 @@ export default function Product() {
                   "First year quarterly maintenance (4 inspections included)",
                   "3-year parts and materials warranty"
                 ].map((feature, i) => (
-                  <li key={i} className="flex items-start text-sm text-muted-foreground">
-                    <span className="text-primary mr-2 font-bold">✓</span>
-                    <span>{feature}</span>
+                  <li key={i} className="flex items-start text-xs text-white/95">
+                    <span className="text-yellow-400 mr-2 font-bold flex-shrink-0">✓</span>
+                    <span className="font-medium">{feature}</span>
                   </li>
                 ))}
               </ul>
 
-              <div className="border-t border-border pt-4 mb-4">
-                <h4 className="font-bold text-foreground mb-2">How Payment Works:</h4>
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>• $100 deposit to schedule (secures your installation window)</li>
-                  <li>• Balance due after installation and testing complete</li>
-                  <li>• Payment plans available with approved credit</li>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 mb-4">
+                <h4 className="font-bold text-white mb-2 text-xs">How Payment Works:</h4>
+                <ul className="space-y-1 text-xs text-white/90">
+                  <li className="flex items-start">
+                    <span className="mr-2">•</span>
+                    <span>$100 deposit to schedule (secures your installation window)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">•</span>
+                    <span>Balance due after installation and testing complete</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">•</span>
+                    <span>Payment plans available with approved credit</span>
+                  </li>
                 </ul>
               </div>
 
               <Link href="/get-protected">
-                <Button size="lg" className="w-full min-h-12">
+                <Button size="lg" variant="secondary" className="w-full min-h-12 font-bold shadow-lg hover:shadow-xl transition-shadow">
                   Schedule Site Assessment
                 </Button>
               </Link>
             </div>
 
-            {/* WildSafe Pro */}
-            <div className="bg-background rounded-lg p-8 shadow-lg border border-border opacity-90">
+            {/* WildSafe Pro - Coming Soon */}
+            <div className="bg-background rounded-xl p-6 lg:p-8 shadow-xl border-2 border-border hover:border-primary/30 transition-colors">
               <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full mb-3">
                 COMING SOON
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">WildSafe Pro</h3>
-              <div className="text-2xl font-bold text-muted-foreground mb-2">Pricing TBD</div>
-              <p className="text-muted-foreground mb-6">Enhanced monitoring and extended service coverage</p>
 
-              <p className="text-sm text-muted-foreground mb-6">
+              <div className="mb-4">
+                <h3 className="text-2xl font-bold text-foreground mb-2">WildSafe Pro</h3>
+                <div className="text-2xl font-bold text-muted-foreground mb-1">Pricing TBD</div>
+                <p className="text-muted-foreground text-sm">Enhanced monitoring and extended service coverage</p>
+              </div>
+
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                 Premium system configuration with smart monitoring capabilities and comprehensive service plans for maximum peace of mind.
               </p>
 
-              <div className="mb-6 text-sm text-muted-foreground">
-                <p className="font-semibold text-foreground mb-2">Coming features:</p>
-                <ul className="space-y-1">
-                  <li>• Smart monitoring app</li>
-                  <li>• Enhanced service coverage</li>
-                  <li>• Extended warranty options</li>
-                  <li>• Premium support</li>
+              <div className="bg-muted/50 rounded-lg p-4 mb-4">
+                <p className="font-bold text-foreground mb-2 text-xs">Coming features:</p>
+                <ul className="space-y-2 text-xs text-muted-foreground">
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0"></span>
+                    <span>Smart monitoring app</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0"></span>
+                    <span>Enhanced service coverage</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0"></span>
+                    <span>Extended warranty options</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0"></span>
+                    <span>Premium support</span>
+                  </li>
                 </ul>
               </div>
 
               <Link href="/get-protected">
-                <Button size="lg" variant="outline" className="w-full min-h-12">
+                <Button size="lg" variant="outline" className="w-full min-h-12 font-semibold border-2 hover:bg-primary/5">
                   Contact Us to Learn More
                 </Button>
               </Link>
             </div>
           </div>
 
-          <div className="mt-8 text-center space-y-2">
-            <p className="text-sm text-muted-foreground font-semibold">
-              Value Context: Traditional whole-property fire suppression systems cost $50,000-$150,000 and require 6-12 months of installation.
-            </p>
-            <p className="text-sm text-muted-foreground">
-              May qualify for homeowner's insurance discounts. Contact your insurance provider for details on potential premium reductions.
-            </p>
+          <div className="mt-6 bg-primary/5 border-l-4 border-primary rounded-lg p-4 lg:p-5">
+            <div className="space-y-2">
+              <p className="text-sm text-foreground font-bold flex items-start">
+                <span className="text-primary mr-2">💰</span>
+                <span>Value Context: Traditional whole-property fire suppression systems cost $50,000-$150,000 and require 6-12 months of installation.</span>
+              </p>
+              <p className="text-xs text-muted-foreground flex items-start">
+                <span className="text-primary mr-2">🛡️</span>
+                <span>May qualify for homeowner's insurance discounts. Contact your insurance provider for details on potential premium reductions.</span>
+              </p>
+            </div>
           </div>
         </div>
       </section>
-
-      <WarrantySection />
 
       <section className="py-20 lg:py-32 px-8 bg-background" id="faq">
         <div className="max-w-5xl mx-auto">
@@ -338,7 +320,7 @@ export default function Product() {
             </Link>
           </div>
         }
-        rightImage="/images/Complete_wildfire_defense_system_installation_42927234.png"
+        rightImage="/images/new-images/doors-open-landscape.png"
         leftBg="bg-primary"
       />
 

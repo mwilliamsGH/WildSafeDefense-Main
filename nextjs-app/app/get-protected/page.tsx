@@ -1,6 +1,6 @@
 import Navigation from "@/components/Navigation";
 import HalfPageSplit from "@/components/HalfPageSplit";
-import ContactForm from "@/components/ContactForm";
+import GoHighLevelForm from "@/components/GoHighLevelForm";
 import VerticalTimeline from "@/components/VerticalTimeline";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -30,205 +30,118 @@ export default function GetProtected() {
 
         <div
           className="bg-cover bg-center relative min-h-[300px] lg:min-h-[50vh]"
-          style={{ backgroundImage: `url(/images/Panoramic_California_fire_season_landscape_2e27a8a1.png)` }}
+          style={{ backgroundImage: `url(/images/new-images/tank-beside-house.png)` }}
         >
           <div className="absolute inset-0 bg-black/20"></div>
         </div>
       </div>
 
-      <section className="py-20 lg:py-32 px-6 lg:px-8 bg-background">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            What You Get in 30 Minutes
-          </h2>
-          <p className="text-lg lg:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Your site assessment is a 30-minute property evaluation with no pressure and no obligation—just the information you need to make the right decision.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-6 mb-8 text-left">
-            <div className="bg-muted p-6 rounded-lg border-l-4 border-primary">
-              <h3 className="font-bold text-foreground mb-3">You'll receive:</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Comprehensive fire risk assessment for your specific property</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Custom system placement recommendations optimized for terrain and access</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Detailed cost breakdown including installation, training, and warranty</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Realistic installation timeline based on current shipping schedules (currently 8-14 weeks)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Answers to every question about operation, maintenance, and performance</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-primary/5 p-6 rounded-lg border-l-4 border-primary">
-              <h3 className="font-bold text-foreground mb-3">Same-day proposal:</h3>
-              <p className="text-sm text-muted-foreground mb-4">
-                Complete specifications, pricing, and timeline delivered via email within hours of your assessment.
-              </p>
-              <div className="mt-4 p-4 bg-background rounded border border-primary/20">
-                <p className="text-sm font-semibold text-foreground">
-                  We'll contact you within 24 hours to schedule your property evaluation and discuss your specific needs, property access, and installation timeline.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <HalfPageSplit
-        leftImage="/images/Professional_site_assessment_consultation_a3098bff.png"
+        leftImage="/images/new-images/doors-open-house.png"
         rightContent={
           <div className="max-w-2xl" id="assessment">
-            <ContactForm
+            <GoHighLevelForm
               title="Schedule Your Free Site Assessment"
               description="We'll contact you within 24 hours to schedule your property evaluation and discuss your specific needs, property access, and installation timeline."
-              expectations={[
-                "Comprehensive fire risk assessment",
-                "Custom system placement recommendations",
-                "Detailed cost breakdown with warranty details",
-                "Realistic 8-14 week installation timeline",
-                "Same-day proposal via email"
-              ]}
-              submitText="Request Site Assessment"
             />
           </div>
         }
         rightBg="bg-muted"
       />
 
-      <section className="py-20 lg:py-32 px-6 lg:px-8 bg-muted">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center text-foreground mb-16">
-            What Happens Next
-          </h2>
+      <section className="py-16 lg:py-24 px-6 lg:px-8 bg-gradient-to-b from-background to-muted">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-block px-4 py-2 bg-primary/10 text-primary text-sm font-bold rounded-full mb-4">
+              YOUR PROTECTION JOURNEY
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-3">
+              From Assessment to Installation
+            </h2>
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto">
+              30-minute site visit to operational system in 8-14 weeks
+            </p>
+          </div>
 
-          <div className="space-y-12">
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg">
-                  1
-                </div>
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-primary/5 p-6 rounded-xl border-2 border-primary/20 hover:border-primary/40 transition-colors">
+              <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-xl mb-4">
+                1
               </div>
-              <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">We Receive Your Inquiry</h3>
-                <p className="text-muted-foreground">
-                  You'll get an automatic confirmation email immediately. Our team reviews your information and responds within 24 hours (typically much faster) to schedule your site assessment at a time that works for you.
-                </p>
-              </div>
+              <h3 className="text-lg font-bold text-foreground mb-2">Site Assessment</h3>
+              <p className="text-sm text-muted-foreground mb-3">
+                30-minute property evaluation covering fire risk, system placement, and access requirements.
+              </p>
+              <p className="text-xs text-muted-foreground font-semibold">
+                Same-day proposal with pricing and timeline
+              </p>
             </div>
 
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg">
-                  2
-                </div>
+            <div className="bg-background p-6 rounded-xl border-2 border-border hover:border-primary/40 transition-colors">
+              <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-xl mb-4">
+                2
               </div>
+              <h3 className="text-lg font-bold text-foreground mb-2">Order & Fabrication</h3>
+              <p className="text-sm text-muted-foreground mb-3">
+                $100 deposit secures your installation window. We handle tank fabrication, international shipping, and logistics.
+              </p>
+              <p className="text-xs text-muted-foreground font-semibold">
+                8-14 weeks with regular progress updates
+              </p>
+            </div>
+
+            <div className="bg-primary/5 p-6 rounded-xl border-2 border-primary/20 hover:border-primary/40 transition-colors">
+              <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-xl mb-4">
+                3
+              </div>
+              <h3 className="text-lg font-bold text-foreground mb-2">Install & Train</h3>
+              <p className="text-sm text-muted-foreground mb-3">
+                Professional installation, system testing, and complete operator training.
+              </p>
+              <p className="text-xs text-muted-foreground font-semibold">
+                First quarterly inspection included
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-primary to-primary/90 rounded-xl p-8 lg:p-10 text-white">
+            <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Site Assessment (30 Minutes)</h3>
-                <p className="text-muted-foreground mb-3">
-                  On-site property evaluation covering:
-                </p>
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>• Fire risk factors specific to your location and terrain</li>
-                  <li>• Optimal system placement for protection and aesthetics</li>
-                  <li>• Access requirements for delivery and installation</li>
-                  <li>• Custom recommendations for your property's needs</li>
+                <h3 className="text-xl font-bold mb-4">What You'll Receive:</h3>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-yellow-400 mr-2 font-bold">✓</span>
+                    <span>Fire risk assessment for your property</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-yellow-400 mr-2 font-bold">✓</span>
+                    <span>Custom placement recommendations</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-yellow-400 mr-2 font-bold">✓</span>
+                    <span>Complete cost breakdown and timeline</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-yellow-400 mr-2 font-bold">✓</span>
+                    <span>Professional installation and training</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-yellow-400 mr-2 font-bold">✓</span>
+                    <span>3-year warranty and first-year maintenance</span>
+                  </li>
                 </ul>
               </div>
-            </div>
 
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg">
-                  3
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                <h3 className="text-xl font-bold mb-3">Quick Response</h3>
+                <p className="text-sm mb-4 text-white/90">
+                  Contact within 24 hours to schedule your assessment. Same-day proposal after site visit.
+                </p>
+                <div className="bg-white/10 rounded-lg p-4">
+                  <p className="text-xs font-semibold">
+                    No pressure. No obligation. Just the information you need to protect your property.
+                  </p>
                 </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Proposal (Same Day)</h3>
-                <p className="text-muted-foreground mb-3">
-                  Detailed specifications and pricing delivered via email within hours:
-                </p>
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>• Complete system breakdown and configuration</li>
-                  <li>• Installation timeline based on current shipping schedules</li>
-                  <li>• Payment options including financing details</li>
-                  <li>• Warranty and maintenance coverage explanation</li>
-                  <li>• Next steps for moving forward</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg">
-                  4
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Secure Your Installation Window</h3>
-                <p className="text-muted-foreground">
-                  $100 deposit locks in your spot in the installation queue. We provide a detailed project timeline with shipping estimates, delivery windows, and installation dates. You'll know exactly when to expect each phase.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg">
-                  5
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Installation (8-14 Weeks)</h3>
-                <p className="text-muted-foreground mb-3">
-                  We manage every detail:
-                </p>
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>• Tank fabrication and international shipping (8-12 weeks)</li>
-                  <li>• Customs and freight logistics</li>
-                  <li>• Site preparation and delivery coordination</li>
-                  <li>• Professional installation and positioning</li>
-                  <li>• System testing and commissioning</li>
-                  <li>• Operator training and documentation</li>
-                </ul>
-                <p className="text-sm text-muted-foreground mt-3">
-                  You stay informed at every step with regular updates on fabrication, shipping, and delivery progress.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg">
-                  6
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">System Handoff & First Inspection</h3>
-                <p className="text-muted-foreground mb-3">
-                  Complete operator training session covering:
-                </p>
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>• System startup and operation procedures</li>
-                  <li>• Maintenance requirements and schedules</li>
-                  <li>• Safety protocols and emergency operation</li>
-                  <li>• Documentation and warranty details</li>
-                </ul>
-                <p className="text-sm text-muted-foreground mt-3 font-semibold">
-                  Your first quarterly maintenance inspection (included in purchase) ensures everything is perfect. System is operational and ready to defend your property.
-                </p>
               </div>
             </div>
           </div>
@@ -286,7 +199,7 @@ export default function GetProtected() {
 
         <div
           className="bg-cover bg-center relative min-h-[300px] lg:min-h-[70vh]"
-          style={{ backgroundImage: `url(/images/Peaceful_protected_California_property_dbc2c389.png)` }}
+          style={{ backgroundImage: `url(/images/new-images/doors-closed-house.png)` }}
         >
           <div className="absolute inset-0 bg-black/40"></div>
           <div className="relative z-10 h-full flex items-end p-8 lg:p-16">

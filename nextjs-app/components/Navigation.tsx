@@ -46,11 +46,11 @@ export default function Navigation() {
           {showLogo && (
             <Link href="/">
               <Image
-                src="/wildsafe-vertical.png"
+                src="/wildsafedefense-horizontal.svg"
                 alt="WildSafe Defense"
-                width={64}
-                height={64}
-                className="h-16 w-auto cursor-pointer"
+                width={230}
+                height={150}
+                className="h-14 w-auto cursor-pointer"
                 priority
               />
             </Link>
