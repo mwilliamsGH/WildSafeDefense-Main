@@ -38,7 +38,7 @@ export default function Footer() {
           </h3>
 
           <p className="text-primary-foreground/90 mb-6 leading-relaxed">
-            Review our FAQ for details on installation, pricing, permits, and operation.
+            Review our comprehensive FAQ for details on installation, pricing, permits, operation, and maintenance.
           </p>
 
           <Link href="/product#faq">
@@ -50,18 +50,28 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-background/10 px-8 py-6">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-          <Image
-            src="/wildsafe-horizontal.png"
-            alt="WildSafe Defense"
-            width={200}
-            height={80}
-            className="h-20 w-auto"
-          />
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
+            <Image
+              src="/wildsafe-horizontal.png"
+              alt="WildSafe Defense"
+              width={200}
+              height={80}
+              className="h-20 w-auto"
+            />
 
-          <p className="text-sm text-background/60">
-            © 2025 WildSafe Defense. All rights reserved.
-          </p>
+            <p className="text-sm text-background/60">
+              © 2025 WildSafe Defense. All rights reserved.
+            </p>
+          </div>
+
+          <div className="pt-4 border-t border-background/10">
+            <p className="text-xs text-background/50 text-center max-w-5xl mx-auto">
+              Shipping & Installation Notice: Installation timelines are estimates based on current shipping conditions.
+              International tank shipment currently requires 8-12 weeks. Total project timeline may vary based on shipping
+              logistics and site-specific factors. Detailed schedule provided after site assessment and order confirmation.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

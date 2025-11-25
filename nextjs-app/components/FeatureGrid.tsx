@@ -38,7 +38,7 @@ export default function FeatureGrid({ sectionTitle, subtitle, features }: Featur
           <div className="flex justify-center mb-6 sm:mb-8">
             <Image
               src="/wildsafe-tank-logo.png"
-              alt="De-Wildfire Tank Logo"
+              alt="WildSafe Tank Logo"
               width={240}
               height={240}
               className="h-24 sm:h-32 lg:h-60 w-auto"
