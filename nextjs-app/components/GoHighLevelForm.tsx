@@ -5,11 +5,13 @@ import { useEffect } from "react";
 interface GoHighLevelFormProps {
   title?: string;
   description?: string;
+  propertyId?: string;
 }
 
 export default function GoHighLevelForm({
   title = "Schedule Your Free Site Assessment",
-  description
+  description,
+  propertyId
 }: GoHighLevelFormProps) {
   useEffect(() => {
     // Load the Go High Level form embed script
@@ -45,7 +47,7 @@ export default function GoHighLevelForm({
 
       <div className="w-full" style={{ minHeight: '1213px' }}>
         <iframe
-          src="https://api.leadconnectorhq.com/widget/form/m9ianiUrcz0CEw5wxSuY"
+          src={`https://api.leadconnectorhq.com/widget/form/m9ianiUrcz0CEw5wxSuY${propertyId ? `?property_id=${encodeURIComponent(propertyId)}` : ''}`}
           style={{
             width: '100%',
             height: '100%',
