@@ -83,7 +83,7 @@ export default function Product() {
             </Link>
           </div>
         }
-        rightImage="/images/new-images/Tank-side.jpeg"
+        rightImage="/images/new-images/newer-assets/Gemini_Generated_Image_ndvtz3ndvtz3ndvt.png"
         leftBg="bg-muted"
       />
 
@@ -116,11 +116,11 @@ export default function Product() {
             label: "weeks installation*"
           }
         ]}
-        ctaText="Schedule Site Assessment for Detailed Specs"
-        ctaLink="/get-protected"
+        ctaText="Download Full System Components"
+        ctaLink="/images/new-images/newer-assets/WildSafe-System-Components.pdf"
       />
 
-      <div className="px-6 lg:px-8 -mt-8 pb-8 bg-primary text-center">
+      <div className="px-6 lg:px-8 -mt-8 py-4 bg-primary text-center">
         <p className="text-sm text-primary-foreground/80 max-w-3xl mx-auto">
           *Installation timeline includes 8-12 weeks for international tank shipping plus delivery coordination and on-site setup.
         </p>
@@ -171,7 +171,7 @@ export default function Product() {
             {/* WildSafe Tank - Featured */}
             <div className="relative bg-gradient-to-br from-primary to-primary/90 rounded-xl p-6 lg:p-8 shadow-2xl transform transition-transform hover:scale-105">
               <div className="absolute -top-3 -right-3 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-xs font-bold shadow-lg">
-                MOST POPULAR
+                AVAILABLE NOW
               </div>
 
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-4">
@@ -274,13 +274,11 @@ export default function Product() {
 
           <div className="mt-6 bg-primary/5 border-l-4 border-primary rounded-lg p-4 lg:p-5">
             <div className="space-y-2">
-              <p className="text-sm text-foreground font-bold flex items-start">
-                <span className="text-primary mr-2">💰</span>
-                <span>Value Context: Traditional whole-property fire suppression systems cost $50,000-$150,000 and require 6-12 months of installation.</span>
+              <p className="text-sm text-foreground font-bold">
+                Value Context: Traditional whole-property fire suppression systems cost $50,000-$150,000 and require 6-12 months of installation.
               </p>
-              <p className="text-xs text-muted-foreground flex items-start">
-                <span className="text-primary mr-2">🛡️</span>
-                <span>May qualify for homeowner's insurance discounts. Contact your insurance provider for details on potential premium reductions.</span>
+              <p className="text-xs text-muted-foreground">
+                May qualify for homeowner's insurance discounts. Contact your insurance provider for details on potential premium reductions.
               </p>
             </div>
           </div>
@@ -320,7 +318,7 @@ export default function Product() {
             </Link>
           </div>
         }
-        rightImage="/images/new-images/doors-open-landscape.png"
+        rightImage="/images/new-images/newer-assets/Gemini_Generated_Image_ndvtz3ndvtz3ndvt.png"
         leftBg="bg-primary"
       />
 

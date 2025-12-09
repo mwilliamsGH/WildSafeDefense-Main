@@ -8,28 +8,50 @@ export default function Footer() {
     <footer className="bg-foreground text-background">
       <div className="grid lg:grid-cols-2">
         <div className="px-8 lg:px-16 py-16 lg:py-20">
-          <h3 className="text-2xl font-bold mb-6">Contact</h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-2xl font-bold mb-6">Contact</h3>
 
-          <div className="space-y-4 mb-8">
-            <div className="flex items-center gap-3">
-              <Phone className="w-5 h-5" />
-              <span>(555) 123-4567</span>
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center gap-3">
+                  <Phone className="w-5 h-5" />
+                  <span>(800) 418-5160</span>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <Mail className="w-5 h-5" />
+                  <span>support@wildsafedefense.com</span>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <Clock className="w-5 h-5" />
+                  <span>Monday–Friday, 8:00 AM – 6:00 PM PT</span>
+                </div>
+              </div>
+
+              <p className="text-sm text-background/70">
+                Response time: Within 24 hours
+              </p>
             </div>
 
-            <div className="flex items-center gap-3">
-              <Mail className="w-5 h-5" />
-              <span>info@wildsafedefense.com</span>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <Clock className="w-5 h-5" />
-              <span>Monday–Friday, 8:00 AM – 6:00 PM PT</span>
+            <div>
+              <h3 className="text-2xl font-bold mb-6">Pages</h3>
+              <nav className="flex flex-col space-y-3">
+                <Link href="/" className="text-background/80 hover:text-background transition-colors">
+                  Home
+                </Link>
+                <Link href="/product" className="text-background/80 hover:text-background transition-colors">
+                  Product
+                </Link>
+                <Link href="/get-protected" className="text-background/80 hover:text-background transition-colors">
+                  Get Protected
+                </Link>
+                <Link href="/faq" className="text-background/80 hover:text-background transition-colors">
+                  FAQ
+                </Link>
+              </nav>
             </div>
           </div>
-
-          <p className="text-sm text-background/70">
-            Response time: Within 24 hours
-          </p>
         </div>
 
         <div className="bg-primary px-8 lg:px-16 py-16 lg:py-20">
@@ -49,7 +71,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-background/10 px-8 py-6">
+      <div className="px-8 py-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
             <Image
@@ -65,7 +87,42 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="pt-4 border-t border-background/10">
+          <div className="pt-4 border-t border-background/10 mb-4">
+            <nav className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-xs text-background/60">
+              <Link href="/privacy-policy" className="hover:text-background transition-colors">
+                Privacy Policy
+              </Link>
+              <span className="hidden md:inline">|</span>
+              <Link href="/terms" className="hover:text-background transition-colors">
+                Terms of Service
+              </Link>
+              <span className="hidden md:inline">|</span>
+              <Link href="/disclaimer" className="hover:text-background transition-colors">
+                Disclaimer
+              </Link>
+              <span className="hidden md:inline">|</span>
+              <Link href="/cookies" className="hover:text-background transition-colors">
+                Cookie Policy
+              </Link>
+              <span className="hidden md:inline">|</span>
+              <Link href="/accessibility" className="hover:text-background transition-colors">
+                Accessibility
+              </Link>
+              <span className="hidden md:inline">|</span>
+              <Link href="/methodology" className="hover:text-background transition-colors">
+                Data Sources
+              </Link>
+            </nav>
+          </div>
+
+          <div className="pt-4 mb-4">
+            <p className="text-xs text-background/50 text-center max-w-5xl mx-auto mb-4">
+              WildSafe Defense wildfire risk reports are informational only and not a fire engineering assessment.{" "}
+              <Link href="/disclaimer" className="text-background/70 hover:text-background underline">
+                See Disclaimer
+              </Link>
+              .
+            </p>
             <p className="text-xs text-background/50 text-center max-w-5xl mx-auto">
               Shipping & Installation Notice: Installation timelines are estimates based on current shipping conditions.
               International tank shipment currently requires 8-12 weeks. Total project timeline may vary based on shipping

@@ -33,14 +33,14 @@ export default function GetProtectedContent() {
 
         <div
           className="bg-cover bg-center relative min-h-[300px] lg:min-h-[50vh]"
-          style={{ backgroundImage: `url(/images/new-images/tank-beside-house.png)` }}
+          style={{ backgroundImage: `url(/images/new-images/newer-assets/Gemini_Generated_Image_91hdzu91hdzu91hd.png)` }}
         >
           <div className="absolute inset-0 bg-black/20"></div>
         </div>
       </div>
 
       <HalfPageSplit
-        leftImage="/images/new-images/doors-open-house.png"
+        leftImage="/images/new-images/newer-assets/Gemini_Generated_Image_ndvtz3ndvtz3ndvt.png"
         rightContent={
           <div className="max-w-2xl" id="assessment">
             <GoHighLevelForm
@@ -203,7 +203,7 @@ export default function GetProtectedContent() {
 
         <div
           className="bg-cover bg-center relative min-h-[300px] lg:min-h-[70vh]"
-          style={{ backgroundImage: `url(/images/new-images/doors-closed-house.png)` }}
+          style={{ backgroundImage: `url(/images/new-images/newer-assets/Gemini_Generated_Image_ndvtz3ndvtz3ndvt.png)` }}
         >
           <div className="absolute inset-0 bg-black/40"></div>
           <div className="relative z-10 h-full flex items-end p-8 lg:p-16">

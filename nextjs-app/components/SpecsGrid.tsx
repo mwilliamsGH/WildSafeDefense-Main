@@ -40,15 +40,27 @@ export default function SpecsGrid({ title, specs, ctaText, ctaLink }: SpecsGridP
 
         {ctaText && ctaLink && (
           <div className="text-center">
-            <Link href={ctaLink}>
-              <Button
-                size="lg"
-                variant="whiteOutline"
-                className="w-full sm:w-auto border-background/30 text-background hover:bg-background/10 min-h-12 px-8"
-              >
-                {ctaText}
-              </Button>
-            </Link>
+            {ctaLink.endsWith('.pdf') ? (
+              <a href={ctaLink} download target="_blank" rel="noopener noreferrer">
+                <Button
+                  size="lg"
+                  variant="whiteOutline"
+                  className="w-full sm:w-auto border-background/30 text-background hover:bg-background/20 hover:text-white min-h-12 px-8 transition-colors"
+                >
+                  {ctaText}
+                </Button>
+              </a>
+            ) : (
+              <Link href={ctaLink}>
+                <Button
+                  size="lg"
+                  variant="whiteOutline"
+                  className="w-full sm:w-auto border-background/30 text-background hover:bg-background/20 hover:text-white min-h-12 px-8 transition-colors"
+                >
+                  {ctaText}
+                </Button>
+              </Link>
+            )}
           </div>
         )}
       </div>

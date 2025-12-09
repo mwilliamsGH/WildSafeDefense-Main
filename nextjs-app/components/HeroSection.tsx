@@ -22,8 +22,8 @@ export default function HeroSection({
   secondaryCTALink,
 }: HeroSectionProps) {
   return (
-    <div className="grid lg:grid-cols-2 min-h-[70vh]">
-      <div className="bg-background flex flex-col justify-center items-center px-6 sm:px-8 lg:px-16 py-16 sm:py-20 lg:py-32">
+    <div className="grid lg:grid-cols-2 min-h-[55vh]">
+      <div className="bg-muted flex flex-col justify-center items-center px-6 sm:px-8 lg:px-16 py-12 sm:py-16 lg:py-20">
         <div className="max-w-xl w-full text-left space-y-5">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight">
             {headline}
@@ -47,7 +47,7 @@ export default function HeroSection({
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full min-h-12 px-8 text-base"
+                  className="w-full min-h-12 px-8 text-base border-foreground/20 hover:bg-foreground/5 hover:border-foreground/30"
                 >
                   {secondaryCTA}
                 </Button>
@@ -58,7 +58,7 @@ export default function HeroSection({
       </div>
 
       <div
-        className="relative bg-cover bg-center min-h-[350px] sm:min-h-[400px] lg:min-h-[70vh] order-first lg:order-last"
+        className="relative bg-cover bg-center min-h-[350px] sm:min-h-[400px] lg:min-h-[55vh] order-first lg:order-last"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className="absolute inset-0 bg-primary/95"></div>

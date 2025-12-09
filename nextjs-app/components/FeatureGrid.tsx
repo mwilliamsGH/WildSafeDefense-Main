@@ -32,16 +32,24 @@ const textColors = {
 
 export default function FeatureGrid({ sectionTitle, subtitle, features }: FeatureGridProps) {
   return (
-    <section className="py-16 sm:py-20 lg:py-32 px-6 sm:px-8 bg-muted">
+    <section className="pt-8 sm:pt-12 lg:pt-16 pb-16 sm:pb-20 lg:pb-32 px-6 sm:px-8 bg-muted">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 sm:mb-16">
+          <div className="flex justify-center mb-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
+              <div className="w-2 h-2 rounded-full bg-primary"></div>
+              <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-wider">
+                Our Solution
+              </span>
+            </div>
+          </div>
           <div className="flex justify-center mb-6 sm:mb-8">
             <Image
               src="/WildSafeTank-logo.png"
               alt="WildSafe Tank Logo"
-              width={240}
-              height={240}
-              className="h-24 sm:h-32 lg:h-60 w-auto"
+              width={400}
+              height={400}
+              className="h-40 sm:h-56 lg:h-80 w-auto"
             />
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4 px-4">
@@ -62,11 +70,7 @@ export default function FeatureGrid({ sectionTitle, subtitle, features }: Featur
               <div className={`absolute inset-0 ${overlayColors[feature.overlayColor]}`}></div>
 
               <div className={`relative h-full flex flex-col justify-end p-8 sm:p-10 lg:p-12 ${textColors[feature.overlayColor]}`}>
-                <div className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-3 sm:mb-4 opacity-90">
-                  {feature.stat}
-                </div>
-
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-3">
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4">
                   {feature.title}
                 </h3>
 
