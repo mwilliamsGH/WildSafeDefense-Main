@@ -40,76 +40,57 @@ export default function WhyActiveDefense({
   ];
 
   return (
-    <div
-      className="relative flex items-center justify-center bg-cover bg-center min-h-[600px]"
+    <section 
+      className="relative py-20 lg:py-32 px-8 bg-cover bg-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/75 to-primary/60"></div>
-
-      <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-8 py-16 sm:py-20 lg:py-32">
-        <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6">
+      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="relative z-10 max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
             {headline}
           </h2>
 
-          <p className="text-sm sm:text-base lg:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto px-4">
+          <p className="text-lg lg:text-xl text-white/90 max-w-3xl mx-auto">
             {bodyText}
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-8 sm:mb-12 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
           {layers.map((layer, index) => (
             <Card
               key={index}
-              className="p-6 sm:p-8 lg:p-10 border-2 bg-white/10 backdrop-blur border-white/30"
-              style={
+              className={`p-8 lg:p-10 flex flex-col items-start bg-background/90 backdrop-blur-sm ${
                 !layer.complete
-                  ? {
-                      boxShadow:
-                        "0 0 40px rgba(40, 58, 58, 1), 0 0 80px rgba(40, 58, 58, 0.8), 0 0 120px rgba(40, 58, 58, 0.6), 0 0 160px rgba(40, 58, 58, 0.4)",
-                    }
-                  : undefined
-              }
+                  ? "border-l-8 border-l-primary border-t-2 border-r-2 border-b-2 shadow-2xl"
+                  : "border-l-4 border-l-primary border-t border-r border-b"
+              }`}
             >
-              <div className="flex items-start gap-4 mb-6">
-                <div
-                  className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center flex-shrink-0 ${
-                    layer.complete ? "bg-white/20" : "bg-primary"
-                  }`}
-                >
-                  <div
-                    className={
-                      layer.complete ? "text-white" : "text-primary-foreground"
-                    }
-                  >
-                    {layer.icon}
-                  </div>
-                </div>
-
-                <div
-                  className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 mt-1 ${
-                    layer.complete ? "bg-green-500/20" : "bg-red-500/20"
-                  }`}
-                >
-                  {layer.complete ? (
-                    <Check className="w-6 h-6 text-green-400" />
-                  ) : (
-                    <X className="w-6 h-6 text-red-400" />
-                  )}
+              {/* Icon Circle */}
+              <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center mb-6 shadow-lg">
+                <div className="text-primary-foreground">
+                  {layer.icon}
                 </div>
               </div>
 
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2">
+              {/* Status Badge */}
+              <div
+                className={`text-xs font-bold uppercase tracking-widest mb-3 px-3 py-1 rounded-sm ${
+                  layer.complete
+                    ? "text-green-600 bg-green-600/10"
+                    : "text-red-600 bg-red-600/10"
+                }`}
+              >
+                {layer.complete ? "✓ COMPLETE" : "✗ CRITICAL GAP"}
+              </div>
+
+              {/* Title */}
+              <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">
                 {layer.title}
               </h3>
 
-              <p
-                className={`text-sm sm:text-base ${
-                  layer.complete
-                    ? "text-white/70"
-                    : "text-primary-foreground font-semibold"
-                }`}
-              >
+              {/* Subtitle/Description */}
+              <p className="text-base text-muted-foreground leading-relaxed">
                 {layer.subtitle}
               </p>
             </Card>
@@ -117,19 +98,15 @@ export default function WhyActiveDefense({
         </div>
 
         {ctaText && ctaLink && (
-          <div className="text-center">
+          <div className="text-center mt-16">
             <Link href={ctaLink}>
-              <Button
-                size="lg"
-                variant="outline"
-                className="bg-white/10 backdrop-blur border-white/40 text-white hover:bg-white/20 min-h-12 px-10 shadow-xl"
-              >
+              <Button size="lg" className="min-h-12 px-10">
                 {ctaText}
               </Button>
             </Link>
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 }

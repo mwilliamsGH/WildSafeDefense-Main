@@ -65,7 +65,7 @@ export default function Home() {
       />
 
       <WhyActiveDefense
-        backgroundImage="/images/new-images/tank-beside-house.png"
+        backgroundImage="/images/new-images/doors-closed-house.png"
         headline="Why Active Defense?"
         bodyText="Fire crews can't be everywhere. Municipal water systems fail under pressure. Power goes out when you need it most.
 
