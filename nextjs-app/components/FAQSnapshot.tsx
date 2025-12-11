@@ -25,7 +25,7 @@ export default function FAQSnapshot({
   reverse = false,
 }: FAQSnapshotProps) {
   const content = (
-    <div className="bg-card px-6 sm:px-8 lg:px-16 py-16 sm:py-20 lg:py-32 flex items-center">
+    <div className="bg-background px-6 sm:px-8 lg:px-16 py-16 sm:py-20 lg:py-32 flex items-center">
       <div className="max-w-2xl w-full">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-8 sm:mb-12">
           {sectionTitle}

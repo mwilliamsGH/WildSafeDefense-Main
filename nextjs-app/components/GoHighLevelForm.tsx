@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import DisclaimerText from "@/components/DisclaimerText";
 
 interface GoHighLevelFormProps {
   title?: string;
@@ -69,6 +70,10 @@ export default function GoHighLevelForm({
           data-form-id="m9ianiUrcz0CEw5wxSuY"
           title="Book Consultation - WildSafeDefense"
         />
+      </div>
+
+      <div className="mt-4">
+        <DisclaimerText variant="form" className="text-center" />
       </div>
     </div>
   );

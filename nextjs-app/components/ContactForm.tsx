@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import DisclaimerText from "@/components/DisclaimerText";
 
 interface ContactFormProps {
   title: string;
@@ -133,6 +134,10 @@ export default function ContactForm({
         >
           {submitText}
         </Button>
+
+        <div className="mt-4">
+          <DisclaimerText variant="form" className="text-center" />
+        </div>
       </form>
     </div>
   );
