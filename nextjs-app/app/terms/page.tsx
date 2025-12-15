@@ -19,14 +19,14 @@ export default function Terms() {
           </h1>
 
           <p className="text-sm text-muted-foreground mb-12">
-            Last Updated: [DATE]
+            Last Updated: December 15, 2025
           </p>
 
           <div className="space-y-8 text-foreground">
             <p className="leading-relaxed">
               Welcome to WildSafe Defense. These Terms govern your use of wildsafedefense.com,
               reports.wildsafedefense.com, and all related wildfire risk Services (the "Services") provided by{" "}
-              <strong>[ENTITY LEGAL NAME]</strong>.
+              <strong>OFA Group</strong>.
             </p>
 
             <p className="leading-relaxed font-semibold">
@@ -92,7 +92,7 @@ export default function Terms() {
               </h2>
               <p className="leading-relaxed mb-4">
                 All reports, graphics, text, images, and scoring models are the property of{" "}
-                <strong>[ENTITY LEGAL NAME]</strong> and/or <strong>[OFA GROUP]</strong>.
+                <strong>OFA Group</strong>.
               </p>
               <p className="leading-relaxed">
                 You may download your report for personal use only.
@@ -137,7 +137,7 @@ export default function Terms() {
                 8. Governing Law
               </h2>
               <p className="leading-relaxed">
-                These Terms are governed by the laws of <strong>[JURISDICTION]</strong>.
+                These Terms are governed by the laws of <strong>California, United States</strong>.
               </p>
             </section>
 
@@ -145,11 +145,15 @@ export default function Terms() {
               <h2 className="text-2xl font-bold text-foreground mt-12 mb-4">
                 9. Contact
               </h2>
-              <p className="leading-relaxed">
-                <strong>[ENTITY LEGAL NAME]</strong><br />
-                [COMPANY ADDRESS]<br />
-                Email: <a href="mailto:support@wildsafedefense.com" className="text-primary hover:underline">support@wildsafedefense.com</a>
-              </p>
+              <div className="bg-muted/50 rounded-lg p-6">
+                <p className="leading-relaxed">
+                  <strong>OFA Group</strong><br />
+                  609 Deep Valley Drive, Suite 200, Rolling Hills, CA 90274<br />
+                  Email: <a href="mailto:support@wildsafedefense.com" className="text-primary hover:underline">support@wildsafedefense.com</a>
+                  <br />
+                  Phone: (800) 418-5160
+                </p>
+              </div>
             </section>
           </div>
         </article>
