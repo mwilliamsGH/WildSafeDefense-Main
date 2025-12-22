@@ -83,7 +83,7 @@ Most properties need more than passive measures like installing fire-resistant m
             stat: "8-14 Weeks",
             description:
               "No permits. No foundation. No utility connections. Delivered, installed, operational in 8-14 weeks while traditional systems take 6+ months.",
-            backgroundImage: "/images/new-images/newer-assets/Gemini_Generated_Image_ndvtz3ndvtz3ndvt.png",
+            backgroundImage: "/images/Peaceful_protected_California_property_dbc2c389.png",
             overlayColor: "dark",
           },
           {
@@ -91,7 +91,7 @@ Most properties need more than passive measures like installing fire-resistant m
             stat: "Independence",
             description:
               "Off-grid operation. Zero dependence on electrical grid or municipal water. Works when infrastructure fails.",
-            backgroundImage: "/images/new-images/tank-front.jpeg",
+            backgroundImage: "/images/new-images/newer-assets/Gemini_Generated_Image_91hdzu91hdzu91hd.png",
             overlayColor: "black",
           },
           {
@@ -99,7 +99,7 @@ Most properties need more than passive measures like installing fire-resistant m
             stat: "Performance",
             description:
               "3,000 gallons. High-pressure pump. Three-story reach. Sustained water delivery when every minute counts.",
-            backgroundImage: "/images/new-images/doors-open-landscape.png",
+            backgroundImage: "/images/new-images/newer-assets/Gemini_Generated_Image_ndvtz3ndvtz3ndvt.png",
             overlayColor: "dark",
           },
           {

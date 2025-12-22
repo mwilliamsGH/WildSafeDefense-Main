@@ -5,32 +5,11 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function Navigation() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [showLogo, setShowLogo] = useState(true);
-
-  useEffect(() => {
-    // Only hide logo on homepage
-    if (pathname !== "/") {
-      setShowLogo(true);
-      return;
-    }
-
-    const handleScroll = () => {
-      if (window.scrollY > window.innerHeight) {
-        setShowLogo(true);
-      } else {
-        setShowLogo(false);
-      }
-    };
-
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [pathname]);
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -43,19 +22,16 @@ export default function Navigation() {
     <nav className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-28">
-          {showLogo && (
-            <Link href="/">
-              <Image
-                src="/wildsafedefense-horizontal.svg"
-                alt="WildSafe Defense"
-                width={192}
-                height={101}
-                className="h-20 w-auto cursor-pointer"
-                priority
-              />
-            </Link>
-          )}
-          {!showLogo && <div className="h-20" />}
+          <Link href="/">
+            <Image
+              src="/wildsafedefense-horizontal.svg"
+              alt="WildSafe Defense"
+              width={192}
+              height={101}
+              className="h-20 w-auto cursor-pointer"
+              priority
+            />
+          </Link>
 
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
