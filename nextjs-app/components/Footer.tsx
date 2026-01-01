@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="px-8 py-6">
+      <div className="bg-background px-8 py-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
             <Image
@@ -82,48 +82,48 @@ export default function Footer() {
               className="h-20 w-auto"
             />
 
-            <p className="text-sm text-background/60">
+            <p className="text-sm text-foreground/60">
               © 2025 WildSafe Defense. All rights reserved.
             </p>
           </div>
 
-          <div className="pt-4 border-t border-background/10 mb-4">
-            <nav className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-xs text-background/60">
-              <Link href="/privacy-policy" className="hover:text-background transition-colors">
+          <div className="pt-4 border-t border-foreground/10 mb-4">
+            <nav className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-xs text-foreground/60">
+              <Link href="/privacy-policy" className="hover:text-foreground transition-colors">
                 Privacy Policy
               </Link>
               <span className="hidden md:inline">|</span>
-              <Link href="/terms" className="hover:text-background transition-colors">
+              <Link href="/terms" className="hover:text-foreground transition-colors">
                 Terms of Service
               </Link>
               <span className="hidden md:inline">|</span>
-              <Link href="/disclaimer" className="hover:text-background transition-colors">
+              <Link href="/disclaimer" className="hover:text-foreground transition-colors">
                 Disclaimer
               </Link>
               <span className="hidden md:inline">|</span>
-              <Link href="/cookies" className="hover:text-background transition-colors">
+              <Link href="/cookies" className="hover:text-foreground transition-colors">
                 Cookie Policy
               </Link>
               <span className="hidden md:inline">|</span>
-              <Link href="/accessibility" className="hover:text-background transition-colors">
+              <Link href="/accessibility" className="hover:text-foreground transition-colors">
                 Accessibility
               </Link>
               <span className="hidden md:inline">|</span>
-              <Link href="/methodology" className="hover:text-background transition-colors">
+              <Link href="/methodology" className="hover:text-foreground transition-colors">
                 Data Sources
               </Link>
             </nav>
           </div>
 
           <div className="pt-4 mb-4">
-            <p className="text-xs text-background/50 text-center max-w-5xl mx-auto mb-4">
+            <p className="text-xs text-foreground/50 text-center max-w-5xl mx-auto mb-4">
               WildSafe Defense wildfire risk reports are informational only and not a fire engineering assessment.{" "}
-              <Link href="/disclaimer" className="text-background/70 hover:text-background underline">
+              <Link href="/disclaimer" className="text-foreground/70 hover:text-foreground underline">
                 See Disclaimer
               </Link>
               .
             </p>
-            <p className="text-xs text-background/50 text-center max-w-5xl mx-auto">
+            <p className="text-xs text-foreground/50 text-center max-w-5xl mx-auto">
               Shipping & Installation Notice: Installation timelines are estimates based on current shipping conditions.
               International tank shipment currently requires 8-12 weeks. Total project timeline may vary based on shipping
               logistics and site-specific factors. Detailed schedule provided after site assessment and order confirmation.
